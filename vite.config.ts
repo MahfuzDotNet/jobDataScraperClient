@@ -15,7 +15,8 @@ export default defineConfig({
     strictPort: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        //target: 'http://localhost:8000',
+        target: 'https://jobdatascraperbackend.onrender.com',
         changeOrigin: true,
       }
     }
