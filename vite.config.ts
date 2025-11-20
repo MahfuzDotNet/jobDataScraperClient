@@ -46,7 +46,7 @@ export default defineConfig({
     port: 5000,
     proxy: {
       "/api": {
-        target: "http://192.168.0.102:8000", // ✅ same IP as frontend
+        target: "https://jobdatascraperbackend.onrender.com", // ✅ same IP as frontend
         changeOrigin: true,
         secure: false,
       },
